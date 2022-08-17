@@ -27,11 +27,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: app-service
+  name: node-service
 spec:
   selector:
     app: nodeapp 
-  type: NodePort
+  type: LoadBalancer
   ports:
     - nodePort: 30163
       port: 8080 
